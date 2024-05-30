@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navbar Style For Every Page  */
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.nav {
+    background-color: #f7fafc;
+    position: relative;
+    z-index: 10;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    padding: 20px 8px;
+    color: #4a5568;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo a:hover {
+    color: #1a202c;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    padding: 20px 12px;
+    color: #4a5568;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #1a202c;
+}
+
+.mobile-menu-button {
+    display: none;
+    border: none;
+    background: none;
+}
+
+.mobile-menu-button svg {
+    width: 24px;
+    height: 24px;
+    stroke: #4a5568;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+
+.websiteLogo {
+    font-weight: bolder;
+    color: darkred;
+    margin-right: auto;
+}
+  
+
+.socials {
+    text-align: center;
+}
+
+
+.social-icons {
+    width: 40px;
+    height: auto;
+    margin-right: 5px;
+    z-index: 100;
+}
+
+
+
+
+.mobileLinks {
+    display: none;
+    position: fixed;
+    top: 100%;
+    left: 0; 
+    width: 100%;
+    background-color: rgb(237, 237, 237); 
+    padding: 10px; 
+    box-sizing: border-box;
+    border-top: 1px solid lightgray;
+    text-align: center;
+}
+
+.mobileLinks li {
+    margin: 10px 0;
+}
+
+.mobileLinks a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+}
+
+.mobileLinks a:hover {
+    color: darkred;
+}
+
+.closeIcon {
+    display: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+
+.mobileView {
+    display: none;
+}
+
+
+/* footer style  */
+
+.content {
+    flex: 1; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 100px;
+}
+
+footer p {
+    font-weight: bolder;
+    font-size: 14px;
+    font-style: italic;   
+    margin-left: 20px;
+}
+/* 
+footer p span {
+    font-style: normal;
+} */
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 14px;
+    font-style: italic;
+    padding: 10px;
+}
+
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footerLinks {
+    margin-right: 20px;
+}
+
+
+
+
+/* Home Page Style  */
+
+.content {
+    text-align: center;
+    z-index: -10;
+}
+
+.introductionHome {
+    font-size: 2em;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.introductionHome span {
+    color: darkred;
+}
+
+.textContentHome {
+    margin-top: 20px;
+}
+
+
+
+/* About me page style */
+
+.aboutmeTitle {
+    font-size: 2em;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.aboutmeTxt {
+    margin: 20px;   
+}
+
+
+/* English Page Style  */
+
+.introductionEnglish {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.grammarTitle {
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+
+.subGrammarTitle {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: darkred;
+}
+
+.forms {
+    margin-bottom: 10px;
+    color: darkred;
+}
+
+.grammarContentText {
+    margin-bottom: 10px;
+}
+
+.example {
+    color: darkred;
+    margin-bottom: 10px;
+}
+
+
+.grammar {
+    background-color: rgb(237, 237, 237);
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.grammarContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px;
+    margin-bottom: 20px; 
+    margin: 20px;
+}
+
+.verbs {
+    font-weight: bolder;
+}
+
+.highlight {
+    color: darkred;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+
+/* Georgian Grammar Style */
+
+.introductionGeorgian {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* @media screen and (max-width: 600px) {
+    nav a {
+        font-size: 0.5em;
+    }
+} */
+
+
+
+@media screen and (max-width: 768px) {
+    .introductionHome {
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
+
+    .textContentHome {
+        margin-top: 15px;
+    }
+    
+    .grammarContent {
+        grid-template-columns: 1fr; 
+    }
+
+    .mobileView {
+        display: block;
+    }
+
+    .desktopMenu {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f7fafc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 20;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 8px 16px;
+        color: #4a5568;
+        text-decoration: none;
+    }
+
+    .mobile-menu a:hover {
+        background-color: #e2e8f0;
+    }
+}
+
+
+
+
+
+.homeText {
+    margin: 15px;
+}
+
+
